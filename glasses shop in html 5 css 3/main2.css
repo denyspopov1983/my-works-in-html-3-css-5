@@ -1,0 +1,664 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+  /* ========================================================================== */
+
+  body {
+      width: 1400px;
+      margin: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  header>div,
+  footer>div {
+      padding-left: 190px;
+      padding-right: 190px;
+  }
+
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  /*
+  ========================================
+  HEADER
+  ========================================
+*/
+
+  header>div:first-child {
+      background-color: rgba(76, 177, 202, 1);
+      color: white;
+      height: 44px;
+  }
+
+  select {
+      background-color: rgba(76, 177, 202, 1);
+      border: none;
+      color: white;
+      font: inherit;
+  }
+
+  option {
+      margin-right: 1px;
+      padding-right: 1px;
+  }
+
+  #header-top>p {
+      display: inline-block;
+      padding-top: 8px;
+  }
+
+  #header-top>p:last-child {
+      float: right;
+      padding-top: 11px;
+  }
+
+  p:first-child span {
+    opacity: .8;
+  }
+
+  p:last-child a:not(a:last-child)::after {
+      content: '|';
+      padding-left: 10px;
+      padding-right: 3px;
+  }
+
+  header>div:nth-child(2) {
+      text-transform: uppercase;
+      height: 103px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  header>div:nth-child(2) div {
+      display: inline-block;
+  }
+
+  #leo-shop {
+      padding-right: 60px;
+      font-size: 26px;
+      font-weight: bold;
+  }
+
+  #home,
+  #women,
+  #men,
+  #other,
+  #purchase {
+      padding-right: 20px;
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+  #cart {
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+  #cart {
+      margin-left: 20px;
+  }
+
+  #search {
+      margin-left: 90px;
+      margin-right: 15px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      text-transform: none;
+      font-size: 13px;
+      opacity: .5;
+      width: 175px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+  }
+
+  #search img {
+      float: right;
+      opacity: initial;
+  }
+
+  #search p {
+      padding-left: 5px;
+      padding-right: 105px;
+  }
+
+  #label-image,
+  #cart-image {
+      width: 36px;
+      height: 36px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: rgba(125, 177, 34, 1);
+      display: flex;
+      align-items: center;
+  }
+
+  #label-image img,
+  #cart-image img {
+      margin: auto;
+  }
+
+  /*
+  ========================================
+  SECTION 1
+  ========================================
+*/
+
+  #banner {
+      background-image: url('image2/banner.png');
+      height: 475px;
+      margin-bottom: 30px;
+  }
+
+  #left-arrow,
+  #right-arrow {
+      height: 68px;
+      width: 68px;
+      border-radius: 50%;
+      background-color: white;
+      margin-left: 190px;
+      padding-left: 0px;
+      background-image: url('image2/arrow.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-x: 22px
+  }
+
+  #right-arrow {
+      transform: scaleX(-1);
+      top: 135px;
+      right: 120px;
+      float: right;
+      position: relative;
+  }
+
+  #left-arrow {
+      position: relative;
+      top: 203px;
+      left: -70px;
+  }
+
+  #aluminum-club,
+  #experience-ray-ban {
+      text-transform: uppercase;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 47px;
+      padding:initial;
+      color: white;
+      font-size: 30px;
+      width: fit-content;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      position: relative;
+  }
+
+  #experience-ray-ban {
+      font-weight: bold;
+      left: 236px;
+      top: 124px;
+  }
+
+  #aluminum-club {
+      top: 121px;
+      left: 236px;
+  }
+
+  /*
+  ========================================
+  SECTION 2
+  ========================================
+*/
+
+  #all-glasses {
+      width: 970px;
+      padding-left: 190px;
+      display: inline-flex;
+      flex-wrap: wrap;
+  }
+   
+  #featured-products>div,
+  #staff-pick>div,
+  #new-products>div {
+      height: 318px;
+      width: 234px;
+      box-shadow: 0px 0px 5px silver;
+      margin-top: 12.5px;
+      margin-bottom: 12.5px;
+  }
+
+  #featured-products,
+  #staff-pick,
+  #new-products {
+      margin-right: 25px;
+      margin-bottom: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 970px;
+  }
+
+  .item {
+      width: 220px;
+      height: 233px;
+      margin: 7px;
+      background-color: #EFF1F0;
+      display: flex;
+      align-items: center;
+  }
+
+  .basket {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      background-color: rgba(125, 177, 34, 1);
+      float: right;
+      margin-top: 7px;
+      margin-right: 7px;
+      display: flex;
+  }
+
+  .basket-image {
+      margin: auto;
+  }
+
+  .value {
+      float: left;
+      margin-top: 7px;
+      margin-left: 7px;
+      line-height: 1.3;
+  }
+
+  .price {
+      color: rgba(125, 177, 34, 1);
+      font-size: 1.1em;
+  }
+
+  .old-price {
+      text-decoration: line-through;
+      font-size: 1rem;
+      color: black;
+  }
+
+  .item-title {
+      text-transform: uppercase;
+      font-size: 24px;
+      margin: 10px 0px;
+      width: 100%;
+  }
+
+  .new {
+    position: relative;
+    top: -80px;
+    left: 134px;
+}
+
+.sale {
+    position: relative;
+    top: -80px;
+    left: -10px;
+}
+
+.item img:nth-child(2) {
+    position: absolute;
+}
+
+#featured-products>div:hover,
+#staff-pick>div:hover,
+#new-products>div:hover {
+    transform: scale(1.1);
+    transition-duration: 160ms;
+}
+
+/*
+  ========================================
+  ASIDE
+  ========================================
+*/
+
+  aside {
+    width: 234px;
+    float: right;
+    margin-right: 190px;
+}
+
+  aside button {
+      cursor: pointer;
+  }
+
+  #aside1,
+  #aside2,
+  #aside3 {
+    box-shadow: 0px 0px 5px silver;
+    width: 234px;
+    padding: 10px;
+  }
+
+  #aside1,
+  #aside3 {
+      border-top: 4px solid #4CB1CA;
+  }
+
+  #aside1 {
+      height: 444px;
+  }
+
+  #adv {
+      height: 100%;
+      width: 100%;
+      background-image: url('image2/adv-banner.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+  }
+
+  #aside2 {
+      height: 42px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #aside3 {
+      height: 282px;
+      padding: 30px;
+  }
+
+  .aside-title {
+      text-transform: uppercase;
+      color: black;
+      font-size: 24px;
+      text-align: center;
+  }
+
+  .aside-button {
+      height: 43px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      text-align: center;
+      border: none;
+      padding: 0px 25px;
+  }
+
+  #aside1 button {
+      background-color: rgba(76, 177, 202, 1);
+      margin-top: 320px;
+      margin-left: 50px;
+  }
+
+  .circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 5px;
+  }
+
+  .circle:not(first-of-type) {
+      background-color: rgba(125, 177, 34, 1);
+  }
+
+  .circle:first-of-type {
+      background-color: rgba(76, 177, 202, 1);
+  }
+
+  .aside-text {
+      text-align: center;
+      font-size: 16px;
+  }
+
+  hr {
+      width: 120px;
+      align-self: center;
+  }
+
+  #form {
+      width: 174px;
+  }
+
+  input {
+      width: 174px;
+      height: 30px;
+      font-size: 16px;
+  }
+
+  #aside3 button {
+      background-color: rgba(126, 177, 35, 1);
+      height: 45px;
+      width: 113px;
+      margin-left: 30px;
+  }
+
+  #aside3>div {
+    padding-bottom: 10px;
+  }
+
+  /*
+  ========================================
+  FOOTER
+  ========================================
+*/
+
+#footer1 {
+    background-color: #4CB1CA;
+    height: 106px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#footer2 {
+    background-color: #39A0B9;
+    height: 335px;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#footer3 {
+    background-color: #0B4B5A;
+    height: 65px;
+    color: #8ADCF0;
+    line-height: 4;
+}
+
+  .footer1-image {
+      height: 66px;
+      width: 66px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 1);
+  }
+
+  .footer1-image:first-child {
+      background-image: url('image2/truck.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 20px;
+  }
+
+  .footer1-image:nth-child(3) {
+      background-image: url('image2/cellphone.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 20px;
+      margin-left: 150px;
+  }
+
+  #footer2>div {
+      width: 220px;
+  }
+
+  .footer2-title {
+      text-transform: uppercase;
+      margin-bottom: 25px;
+  }
+
+  footer hr {
+      width: auto;
+      border: 1px solid rgba(248, 248, 248, 0.5);
+  }
+
+  .footer2-cell:first-child>div:nth-of-type(4) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .footer2-cell:first-of-type img:nth-child(-n+4) {
+      padding-bottom: 7px;
+  }
+
+  .twitter-image {
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      background-color: white;
+      background-image: url('image2/twitter.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      float: left;
+  }
+
+  .twitter-text {
+      padding-left: 50px;
+      line-height: 1.1;
+  }
+
+  .twitter-text + div {
+      margin-top: 10px;
+  }
+
+  #footer2>div:nth-child(2)>div:nth-child(2) {
+      margin-bottom: 10px;
+  }
+
+  .twitter-text span {
+      opacity: .5;
+  }
+
+  #information {
+      list-style-type: ">";
+  }
+
+  footer li {
+      padding-bottom: 4px;
+      line-height: 1.1;
+  }
+
+  #contact {
+      list-style: none;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  #members {
+      padding: 10px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  #social {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+  }
+
+  #social div {
+      height: 37px;
+      width: 37px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: white;
+  }
+
+  #social a:nth-of-type(1)>div {
+      background-image: url('image2/google.png');
+  }
+
+  #social a:nth-of-type(2)>div {
+      background-image: url('image2/linkedin.png');
+  }
+
+  #social a:nth-of-type(3)>div {
+      background-image: url('image2/wifi.png');
+  }
+
+  #social a:nth-of-type(4)>div {
+      background-image: url('image2/facebook.png');
+  }
+
+  #footer3 div {
+      float: left;
+  }
+  
+  #footer3 ul {
+      float: right;
+  }
+
+  #footer3 li {
+      display: inline;
+      padding-right: 0 5px;
+  }
+
+  #footer3 li:nth-of-type(-n+3):after {
+      content: "|";
+      padding-left: 5px;
+  }
